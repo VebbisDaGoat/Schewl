@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.kontaktbox {
+    position: relative;
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+}
+
+.kontaktbox img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 0%;
+}
+
+.kontaktkort {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: min(90vw, 1000px);
+    min-height: 60vh;
+    padding: clamp(24px, 5vw, 64px);
+    
+    background-color: rgba(255, 202, 132, 0.94);
+    border-radius: 16px;
+}
+
+.kontaktkort h1 {
+    margin-top: 0;
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+
+.kontaktkort p {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.6;
+}
+
+.kontaktkort nav {
+    display: flex;
+    flex-wrap: warp;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.kontaktkort nav a {
+    padding: 12px 18px;
+    background: #222;
+    color:white;
+    text-decoration: none;
+    border: 2px solid #222; 
+    border-radius: 6px;
+}   
+
+
+.kontaktkort nav a:hover {
+    background: white;
+    color: #222;
+}   
+
+body {
+    margin: 0;
+    padding: 0;
+}
+div.img {
+    background-image: url("../bilder/kontaktbilde.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100vw;
+    height: 100vh;
+}
